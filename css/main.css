@@ -288,7 +288,7 @@ body {
 
 .section-features {
   padding: 14rem 0;
-  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801)), url("../../img/section-feature-bg.jpg");
+  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801)), url("../img/section-feature-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

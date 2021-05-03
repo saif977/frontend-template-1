@@ -50,7 +50,7 @@ body {
   color: transparent;
   font-size: 2rem;
   font-family: lato;
-  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801));
+  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801),url("../img/bg.jpg"));
   -webkit-background-clip: text;
   display: inline-block;
   margin-bottom: .5rem;

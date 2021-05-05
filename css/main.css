@@ -50,7 +50,7 @@ body {
   color: transparent;
   font-size: 2rem;
   font-family: lato;
-  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801),url("../img/bg.jpg"));
+  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801));
   -webkit-background-clip: text;
   display: inline-block;
   margin-bottom: .5rem;
@@ -218,6 +218,58 @@ body {
     transform: translateY(-5%) scale(1.02);
     box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.363); }
 
+.card {
+  perspective: 140rem;
+  height: 25rem;
+  position: relative; }
+  .card__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.295);
+    transition: transform 1s ease-in-out;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back .card__detail-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%); }
+        .card__side--back .card__detail-container .card__price {
+          margin-bottom: 4rem;
+          font-weight: 300;
+          color: white; }
+          .card__side--back .card__detail-container .card__price-text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 1rem; }
+          .card__side--back .card__detail-container .card__price-value {
+            font-size: 3rem; }
+        .card__side--back .card__detail-container .btn {
+          font-weight: 200;
+          font-size: .5rem; }
+    .card__side--front--1 {
+      background-color: red; }
+    .card__side--front--2 {
+      background-color: red; }
+    .card__side--front--3 {
+      background-color: red; }
+    .card__side--back--1 {
+      background-image: linear-gradient(to right bottom, #11998e, #38ef7d); }
+    .card__side--back--2 {
+      background-image: linear-gradient(to right bottom, #ee0979, #ff6a00); }
+    .card__side--back--3 {
+      background-image: linear-gradient(to right bottom, #09C6F9, #045DE9); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 @keyframes logo {
   from {
     scale: 0; }
@@ -286,21 +338,36 @@ body {
   padding-top: 17rem;
   margin-top: -30vh; }
 
-.section-features {
+.sec-features {
   padding: 14rem 0;
   background-image: linear-gradient(to right, rgba(255, 0, 170, 0.663) 10%, rgba(98, 0, 255, 0.601)), url("../img/section-feature-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transform: translateY(-29%) skewY(-10deg); }
-  .section-features > * {
+  .sec-features > * {
     transform: skewY(10deg); }
-  .section-features--row-width {
+  .sec-features--row-width {
     width: 100%;
     margin: 0 auto; }
+
+.sec-packages {
+  padding: 5rem 0 15rem 0;
+  transform: translateY(-20%); }
 
 .ut-center {
   text-align: center; }
 
 .ut-margin-80 {
   margin-bottom: 80px; }
+
+.ut-margin-top-50 {
+  margin-top: -50px; }
+
+.ut-col-ht {
+  height: 25rem; }
+
+.ut-btn-mod {
+  font-size: 1rem;
+  color: rgba(53, 53, 53, 0.89);
+  font-weight: 400; }

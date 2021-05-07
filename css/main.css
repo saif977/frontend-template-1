@@ -232,7 +232,7 @@ body {
     backface-visibility: hidden;
     height: 100%;
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden; } 
     .card__side--front .card-front__pic {
       padding-left: 2rem;
       height: 12rem;

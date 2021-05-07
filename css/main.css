@@ -240,11 +240,11 @@ body {
       background-size: cover;
       background-blend-mode: screen; }
       .card__side--front .card-front__pic-1 {
-        background-image: linear-gradient(to right, #11998e, #38ef7d), url("../../img/card-pic-1.jpg"); }
+        background-image: linear-gradient(to right, #11998e, #38ef7d), url("../img/card-pic-1.jpg"); }
       .card__side--front .card-front__pic-2 {
-        background-image: linear-gradient(to right, #ee0979, #ff6a00), url("../../img/card-pic-2.jpg"); }
+        background-image: linear-gradient(to right, #ee0979, #ff6a00), url("../img/card-pic-2.jpg"); }
       .card__side--front .card-front__pic-3 {
-        background-image: linear-gradient(to right, #09C6F9, #045DE9), url("../../img/card-pic-3.jpg"); }
+        background-image: linear-gradient(to right, #09C6F9, #045DE9), url("../img/card-pic-3.jpg"); }
     .card__side--front .card-front__para {
       color: white;
       font-size: 1.5rem;

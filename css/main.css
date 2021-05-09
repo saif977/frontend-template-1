@@ -499,6 +499,11 @@ body {
       height: 100%;
       object-fit: cover; }
 
+.sec-booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801));
+  margin-top: -14rem; }
+
 .ut-center {
   text-align: center; }
 

@@ -353,6 +353,42 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
+.form-cnt {
+  width: 50%;
+  height: 100%; }
+  .form-cnt .form__inp-cnt {
+    padding-left: 5rem;
+    text-transform: capitalize; }
+    .form-cnt .form__inp-cnt .input {
+      text-transform: inherit;
+      width: 75%;
+      padding: 1rem;
+      border: none;
+      border-radius: 2px;
+      display: block;
+      font-size: 1rem;
+      border-bottom: 2px solid transparent;
+      transition: all .2s ease-in-out; }
+      .form-cnt .form__inp-cnt .input:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border-bottom: 2px solid orangered; }
+      .form-cnt .form__inp-cnt .input:focus:valid {
+        border-bottom: 2px solid rgba(255, 0, 170, 0.863); }
+    .form-cnt .form__inp-cnt .inp-cnt__label {
+      text-transform: inherit;
+      padding-left: 1rem;
+      display: inline-block;
+      color: #5a5a5a;
+      opacity: 1;
+      transform: translateY(0);
+      transition: all .3s ease-in-out; }
+    .form-cnt .form__inp-cnt:not(:last-child) {
+      margin-bottom: 1rem; }
+    .form-cnt .form__inp-cnt .input:placeholder-shown + .inp-cnt__label {
+      opacity: 0;
+      transform: translateY(-50%); }
+
 @keyframes logo {
   from {
     scale: 0; }
@@ -503,29 +539,45 @@ body {
   padding: 15rem 0;
   background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801));
   margin-top: -14rem; }
+  .sec-booking .form-bg-cnt {
+    height: 30rem;
+    background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0% 50%, transparent 50% 100%), url("../img/form-bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
 
 .ut-center {
-  text-align: center; }
+  text-align: center !important; }
 
 .ut-margin-80 {
-  margin-bottom: 80px; }
+  margin-bottom: 80px !important; }
 
 .ut-margin-top-50 {
-  margin-top: -50px; }
+  margin-top: -50px !important; }
 
 .ut-margin-top-6 {
-  margin-top: 6rem; }
+  margin-top: 6rem !important; }
 
 .ut-col-ht {
-  height: 25rem; }
+  height: 25rem !important; }
 
 .ut-btn-mod {
-  font-size: 1rem;
-  color: rgba(53, 53, 53, 0.89);
-  font-weight: 400; }
+  font-size: 1rem !important;
+  color: rgba(53, 53, 53, 0.89) !important;
+  font-weight: 400 !important; }
 
 .ut-font-size-small {
-  font-size: 1rem; }
+  font-size: 1rem !important; }
 
 .ut-center {
-  text-align: center; }
+  text-align: center !important; }
+
+.ut-fontSize-med {
+  font-size: 1.7rem !important; }
+
+.ut-padding-top-60 {
+  padding-top: 4rem !important; }
+
+.ut-margin-bottom-20 {
+  margin-bottom: 2rem !important; }

@@ -575,8 +575,9 @@ body {
 
 .sec-booking {
   padding: 15rem 0;
-  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801));
-  margin-top: -14rem; }
+  background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, #6200ff);
+  margin-top: -15rem;
+  position: relative; }
   .sec-booking .form-bg-cnt {
     height: 30rem;
     background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0% 50%, transparent 50% 100%), url("../img/form-bg-2.jpg");
@@ -619,3 +620,6 @@ body {
 
 .ut-margin-bottom-20 {
   margin-bottom: 2rem !important; }
+
+.ut-z-index-2 {
+  z-index: 2 !important; }

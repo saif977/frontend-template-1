@@ -587,34 +587,42 @@ body {
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
 
 footer {
-  background-color: #131111;
+  background-color: #2d2d2d;
   color: white;
-  padding: 5rem 0rem; }
+  padding: 5rem 0rem;
+  font-size: .8rem; }
   footer .footer__logo__cnt {
     width: 100%;
     text-align: center;
-    padding: 5rem 0rem; }
+    padding: 0rem 0rem 5rem 0rem; }
     footer .footer__logo__cnt .footer__icon {
-      transform: scale(4); }
-  footer .footer__left-el-cnt {
+      transform: scale(6); }
+  footer .footer__el-cnt {
     list-style: none;
     display: inline-block;
     border-top: 1px solid white;
     padding-top: 1rem; }
-    footer .footer__left-el-cnt::after {
+    footer .footer__el-cnt::after {
       content: "";
       display: table;
       clear: both; }
-    footer .footer__left-el-cnt .footer__left-el {
+    footer .footer__el-cnt .footer__left-el, footer .footer__el-cnt .footer__right-el {
       float: left;
       text-transform: uppercase;
-      cursor: pointer; }
-      footer .footer__left-el-cnt .footer__left-el:hover span {
+      cursor: pointer;
+      padding: .3rem; }
+      footer .footer__el-cnt .footer__left-el span, footer .footer__el-cnt .footer__right-el span {
+        backface-visibility: hidden;
+        transition: all .3s ease-in-out; }
+      footer .footer__el-cnt .footer__left-el:hover span, footer .footer__el-cnt .footer__right-el:hover span {
         display: inline-block;
-        background-color: red;
-        transform: scale(1.02) skewX(-15deg); }
-      footer .footer__left-el-cnt .footer__left-el:not(:last-child) {
+        color: #ee0979;
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0rem 0.5rem 1rem black; }
+      footer .footer__el-cnt .footer__left-el:not(:last-child), footer .footer__el-cnt .footer__right-el:not(:last-child) {
         margin-right: 1rem; }
+  footer .footer__el-cnt-right {
+    float: right; }
 
 .ut-center {
   text-align: center !important; }
@@ -653,3 +661,9 @@ footer {
 
 .ut-z-index-2 {
   z-index: 2 !important; }
+
+.ut-footer {
+  padding: 0 1rem;
+  margin-left: 0 !important;
+  margin-right: 0px !important;
+  max-width: 100% !important; }

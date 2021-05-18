@@ -504,13 +504,26 @@ body {
   transform: translateY(-29%) skewY(-10deg); }
   .sec-features > * {
     transform: skewY(10deg); }
-  .sec-features--row-width {
-    width: 100%;
-    margin: 0 auto; }
+  .sec-features__grid-cnt {
+    max-width: 100%;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, 210px);
+    grid-column-gap: 3rem;
+    justify-content: center; }
 
 .sec-packages {
   padding: 8rem 0 12rem 0;
   transform: translateY(-20%); }
+  .sec-packages__grid-cnt {
+    max-width: 100%;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-column-gap: 3rem;
+    justify-content: center; }
 
 .sec-review {
   text-align: center;

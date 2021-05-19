@@ -5,15 +5,19 @@
   margin: 0;
   box-sizing: inherit; }
 
+html {
+  font-size: 90%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 80%; } }
+  @media (max-width: 39em) {
+    html {
+      font-size: 70%; } }
+
 body {
   padding: .7rem;
   background-color: white;
-  box-sizing: border-box; }
-
-html {
-  font-size: 90%; }
-
-body {
+  box-sizing: border-box;
   font-family: lato; }
 
 .heading--main-text {

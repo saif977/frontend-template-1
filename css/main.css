@@ -13,12 +13,18 @@ html {
   @media (max-width: 39em) {
     html {
       font-size: 70%; } }
+  @media (max-width: 35em) {
+    html {
+      font-size: 65%; } }
 
 body {
   padding: .7rem;
   background-color: white;
   box-sizing: border-box;
   font-family: lato; }
+  @media (max-width: 32.5rem) {
+    body {
+      padding: 0; } }
 
 .heading--main-text {
   display: block;
@@ -34,6 +40,9 @@ body {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards; }
+  @media (max-width: 32.5rem) {
+    .heading--main-text {
+      line-height: 6.5rem; } }
 
 .heading--primary-text {
   display: block;
@@ -49,6 +58,9 @@ body {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards; }
+  @media (max-width: 32.5rem) {
+    .heading--primary-text {
+      line-height: 2rem; } }
 
 .secondary-header {
   color: transparent;
@@ -85,6 +97,9 @@ body {
   height: 95vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%); }
+  @media (max-width: 35em) {
+    .header {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); } }
   .header__logo {
     transform: scale(4);
     position: absolute;
@@ -104,6 +119,9 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     line-height: 4.5rem; }
+    @media (max-width: 32.5rem) {
+      .header__text-cnt .responsive-header-btn {
+        margin-top: 2rem; } }
 
 .btn {
   animation-name: downToUpbtn;
@@ -217,7 +235,7 @@ body {
   position: relative; }
   .img-cnt__image {
     position: absolute;
-    width: 75%;
+    width: 55%;
     box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.397);
     outline-offset: .5rem;
     transition: all .2s ease-in-out; }
@@ -232,10 +250,10 @@ body {
     left: 25%;
     z-index: 1; }
   .img-cnt--p2 {
-    left: 50%;
+    left: 44%;
     top: 2rem; }
   .img-cnt--p3 {
-    left: 0;
+    left: 2%;
     top: -1.5rem; }
   .img-cnt:hover :not(:hover) {
     transform: scale(0.9); }
@@ -498,6 +516,12 @@ body {
   padding-bottom: 25rem;
   padding-top: 17rem;
   margin-top: -30vh; }
+  .sec-about__grid-cnt {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem;
+    padding-bottom: 3rem; }
 
 .sec-features {
   padding: 14rem 0;
@@ -684,3 +708,6 @@ footer {
   margin-left: 0 !important;
   margin-right: 0px !important;
   max-width: 100% !important; }
+
+.ut-padding-right-col-1 {
+  padding-right: 3rem; }

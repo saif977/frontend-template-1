@@ -88,6 +88,9 @@ body {
   font-size: 1rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 1rem; }
+  @media (max-width: 39em) {
+    .paragraph {
+      font-size: 1.15rem; } }
 
 .header {
   background-image: linear-gradient(to right, rgba(255, 0, 170, 0.863) 10%, rgba(98, 0, 255, 0.801)), url("../img/bg.jpg");
@@ -215,6 +218,9 @@ body {
   margin-top: 1.6rem;
   border-bottom: 1.6px solid rgba(255, 0, 170, 0.863);
   transition: all .3s ease-in-out; }
+  @media (max-width: 56.25em) {
+    .btn-text {
+      font-size: .95rem; } }
   .btn-text:hover {
     transform: translateY(-8px);
     background-color: rgba(255, 0, 170, 0.863);
@@ -273,10 +279,11 @@ body {
     color: transparent;
     margin-top: .5rem;
     margin-bottom: 2rem; }
-  .feature-card__heading {
+  .feature-card__heading, .feature-card__paragraph {
     font-size: .95rem; }
-  .feature-card__paragraph {
-    font-size: .95rem; }
+    @media (max-width: 56.25em) {
+      .feature-card__heading, .feature-card__paragraph {
+        font-size: 1.15rem; } }
   .feature-card:hover {
     transform: translateY(-5%) scale(1.02);
     box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.363); }
@@ -331,6 +338,9 @@ body {
         font-size: 1rem;
         margin-bottom: 2.5rem;
         display: inline-block; }
+        @media (max-width: 39em) {
+          .card__side--front .card-front__details li {
+            font-size: 1.1rem; } }
         .card__side--front .card-front__details li span {
           color: black;
           background-color: white;
@@ -395,6 +405,9 @@ body {
       font-size: 1rem;
       border-bottom: 2px solid transparent;
       transition: all .2s ease-in-out; }
+      @media (max-width: 56.25em) {
+        .form-cnt .form__inp-cnt .input {
+          font-size: 1.1rem; } }
       .form-cnt .form__inp-cnt .input:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -414,6 +427,9 @@ body {
     .form-cnt .form__inp-cnt .input:placeholder-shown + .inp-cnt__label {
       opacity: 0;
       transform: translateY(-50%); }
+    @media (max-width: 56.25em) {
+      .form-cnt .form__inp-cnt {
+        font-size: 1.1rem; } }
   .form-cnt .form .radio-cnt {
     display: inline-block;
     position: relative;
@@ -596,6 +612,9 @@ body {
         transition: all .3s ease-in-out; }
     .sec-review .review-cnt__text {
       transform: skewX(5deg); }
+      @media (max-width: 56.25em) {
+        .sec-review .review-cnt__text .font-size-tab-land {
+          font-size: 1.15rem; } }
     .sec-review .review-cnt:hover .review-cnt__img-cnt__photo {
       filter: blur(3px) brightness(75%);
       transform: scale(1); }

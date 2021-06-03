@@ -482,9 +482,22 @@ body {
 .form-cnt {
   width: 50%;
   height: 100%; }
+  @media (max-width: 60em) {
+    .form-cnt {
+      width: 60%; } }
+  @media (max-width: 32.5rem) {
+    .form-cnt {
+      width: 100%;
+      padding: 0 10rem; } }
+  @media (max-width: 28.5em) {
+    .form-cnt {
+      padding: 0 8rem; } }
   .form-cnt .form__inp-cnt {
     padding-left: 3rem;
     text-transform: capitalize; }
+    @media (max-width: 32.5rem) {
+      .form-cnt .form__inp-cnt {
+        padding-left: 0; } }
     .form-cnt .form__inp-cnt .input {
       text-transform: inherit;
       width: 75%;
@@ -498,6 +511,9 @@ body {
       @media (max-width: 60em) {
         .form-cnt .form__inp-cnt .input {
           font-size: 1.1rem; } }
+      @media (max-width: 32.5rem) {
+        .form-cnt .form__inp-cnt .input {
+          width: 100%; } }
       .form-cnt .form__inp-cnt .input:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -554,6 +570,10 @@ body {
   .form-cnt .form .btn {
     margin-top: 2.5rem;
     padding-left: 8rem; }
+    @media (max-width: 32.5rem) {
+      .form-cnt .form .btn {
+        text-align: center;
+        padding-left: 0; } }
 
 @keyframes logo {
   from {
@@ -792,6 +812,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); }
+    @media (max-width: 60em) {
+      .sec-booking .form-bg-cnt {
+        background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0% 60%, transparent 50% 100%), url("../img/form-bg-2.jpg"); } }
+    @media (max-width: 32.5rem) {
+      .sec-booking .form-bg-cnt {
+        background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0% 100%, transparent 50% 100%), url("../img/form-bg-2.jpg"); } }
 
 footer {
   background-color: #2d2d2d;

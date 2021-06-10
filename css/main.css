@@ -528,6 +528,15 @@ body {
   @media (max-width: 28.5em) {
     .form-cnt {
       padding: 0 8rem; } }
+  @media (max-width: 28.5em) {
+    .form-cnt {
+      padding: 0 6rem; } }
+  @media (max-width: 24em) {
+    .form-cnt {
+      padding: 0 3rem; } }
+  @media (max-width: 19.7em) {
+    .form-cnt {
+      padding: 0 1rem; } }
   .form-cnt .form__inp-cnt {
     padding-left: 3rem;
     text-transform: capitalize; }
@@ -572,31 +581,29 @@ body {
     @media (max-width: 59.9em) {
       .form-cnt .form__inp-cnt {
         font-size: 1.1rem; } }
-  .form-cnt .form .in
-.radio-cnt {
+  @media (max-width: 32.5rem) {
+    .form-cnt .form__inp-radio-cnt {
+      text-align: center;
+      padding-left: 0; } }
+  .form-cnt .form .radio-cnt {
     display: inline-block;
     position: relative;
     padding: .5rem 0; }
-    .form-cnt .form .in
-.radio-cnt:not(:last-child) {
+    .form-cnt .form .radio-cnt:not(:last-child) {
       margin-right: 3rem; }
-    .form-cnt .form .in
-.radio-cnt .inp-radio-button {
+    .form-cnt .form .radio-cnt .inp-radio-button {
       display: none; }
-    .form-cnt .form .in
-.radio-cnt .inp-radio-label {
+    .form-cnt .form .radio-cnt .inp-radio-label {
       padding-left: 2rem;
       position: relative; }
-      .form-cnt .form .in
-.radio-cnt .inp-radio-label .fake-radio-cnt {
+      .form-cnt .form .radio-cnt .inp-radio-label .fake-radio-cnt {
         padding: .5rem;
         border: 4px solid rgba(255, 0, 170, 0.863);
         border-radius: 50%;
         position: absolute;
         left: 0;
         transform: translateY(-10%); }
-        .form-cnt .form .in
-.radio-cnt .inp-radio-label .fake-radio-cnt::after {
+        .form-cnt .form .radio-cnt .inp-radio-label .fake-radio-cnt::after {
           content: "";
           width: 50%;
           height: 50%;
@@ -607,8 +614,7 @@ body {
           left: 50%;
           transform: translate(-50%, -50%);
           opacity: 0; }
-    .form-cnt .form .in
-.radio-cnt .inp-radio-button:checked + .inp-radio-label > .fake-radio-cnt::after {
+    .form-cnt .form .radio-cnt .inp-radio-button:checked + .inp-radio-label > .fake-radio-cnt::after {
       opacity: 1; }
   .form-cnt .form .btn {
     margin-top: 2.5rem;
@@ -868,6 +874,9 @@ body {
     @media (max-width: 32.5rem) {
       .sec-booking .form-bg-cnt {
         background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.8) 0% 100%, transparent 50% 100%), url("../img/form-bg-2.jpg"); } }
+    @media (max-width: 39em) {
+      .sec-booking .form-bg-cnt {
+        height: 32rem; } }
 
 footer {
   background-color: #2d2d2d;

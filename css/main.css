@@ -107,7 +107,7 @@ body {
   clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%); }
   @media (max-width: 35em) {
     .header {
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 90%); } }
   .header__logo {
     transform: scale(4);
     position: absolute;
